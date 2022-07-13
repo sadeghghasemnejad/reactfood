@@ -1,0 +1,134 @@
+.header__cartbtn {
+  display: flex;
+  padding: 0.8rem 5.6rem;
+  align-items: center;
+  gap: 1.6rem;
+  color: #f8f9fa;
+  background-color: rgba(39, 5, 17, 0.473);
+  border-radius: 10rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.header__cartbtn:hover {
+  transform: scale(1.1);
+}
+
+.cartbtn__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  stroke: #f8f9fa;
+}
+.cartbtn__count {
+  padding: 0.3rem 1.6rem;
+  background-color: #c92a2a;
+  border-radius: 50%;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 10;
+  backdrop-filter: blur(0.5rem);
+}
+.cartbox {
+  width: 40%;
+  padding: 3.2rem;
+  background-color: #f8f9fa;
+  border-radius: 0.3rem;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
+}
+.cartbox__foods {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.8rem;
+  border-bottom: #c92a2a solid 0.3rem;
+  margin: 3.2rem 0;
+}
+.cartbox__foods--left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.cartbox__foods--left--name {
+  font-size: 2.4rem;
+}
+.cartbox__foods--left--content {
+  display: flex;
+  width: 15rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.cartbox__foods--left--content--price {
+  color: #c92a2a;
+  font-weight: 700;
+}
+.cartbox__foods--left--content--amount {
+  padding: 0.2rem 0.8rem;
+  border: solid rgba(0, 0, 0, 0.3) 0.1rem;
+  border-radius: 0.3rem;
+}
+.cartbox__foods--right {
+  display: flex;
+  gap: 0.8rem;
+  cursor: pointer;
+}
+.cartbox__foods--right--btn {
+  padding: 0.2rem 1.6rem;
+  border: solid rgba(0, 0, 0, 0.3) 0.1rem;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #c92a2a;
+  font-size: 2rem;
+  font-weight: 700;
+  transition: all 0.3s;
+}
+.cartbox__total-amount {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 3.2rem;
+}
+.cartbox__buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 2.4rem;
+}
+.cartbox__buttons--close,
+.cartbox__buttons--order {
+  padding: 0.8rem 3.2rem;
+  border: #c92a2a solid 0.1rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+.cartbox__buttons--close {
+  color: #c92a2a;
+}
+.cartbox__buttons--close:hover {
+  color: #f8f9fa;
+  background-color: #c92a2a;
+}
+.cartbox__buttons--order {
+  color: #f8f9fa;
+  background-color: #c92a2a;
+}
+.cartbox__buttons--order:hover {
+  color: #c92a2a;
+  background-color: #f8f9fa;
+}
+.cartbox__foods--right--btn:hover {
+  color: #f8f9fa;
+  background-color: #c92a2a;
+}

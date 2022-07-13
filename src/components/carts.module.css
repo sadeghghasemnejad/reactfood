@@ -1,0 +1,9 @@
+.carts {
+  width: 50%;
+  background-color: #f8f9fa;
+  margin: 0 auto;
+  margin-top: 13rem;
+  padding: 2.4rem;
+  border-radius: 3rem;
+  box-shadow: 0 0 2.4rem rgba(255, 255, 255, 0.4);
+}
